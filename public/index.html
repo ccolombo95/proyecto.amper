@@ -7,11 +7,13 @@
     <title>Amper</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./../css/cards.css" />
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dawning+of+a+New+Day&family=Flamenco:wght@300;400&family=Gaegu:wght@300;400;700&family=Montserrat:ital,wght@0,500;1,300;1,400&family=Neucha&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Pompiere&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Press+Start+2P&family=Quicksand:wght@300;400;500;600;700&family=Ruluko&family=Signika:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  
   </head>
   <body>
+
     <header class="hero portada-principal">
        
       <nav class="nav container" >
@@ -34,9 +36,16 @@
               <li class="nav__items">
                   <a href="./pages/donations.html" class="nav_verde ">Donar</a>
               </li>
-              <li class="nav__items">
-                <a href="./pages/loguin.html" class="nav_verde">Iniciar Sesión</a>
-            </li>
+              <li class="nav__items" id="iniciarSesion" style="display: block;">
+                <a href="./pages/login.html" class="nav_verde">Iniciar Sesión</a>
+              </li>
+              <li class="nav__items" id="administrador" style="display: none;">
+                <a href="./admin/dashboard.html" class="nav_verde">Dashboard</i></a>
+              </li>
+              <li class="nav__items" id="cerrarSesion" style="display: none;">
+                <a href="./../../auth/logout" class="nav_verde"><i class="fa-solid fa-lg fa-right-from-bracket"></i></a>
+              </li>
+
               <div class="nav__close">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill:#00503f"><path d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"></path><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"></path></svg>                 </div>
           </ul>
@@ -89,25 +98,8 @@
 
         <section class="container image-startups" style="background-image: url('./imgs/polygon-scatter-haikei.svg'); background-size: cover;">
   
-        <div class="cards-container">
-            <div class="card">
-                <img src="./imgs/imagen-startup.png" alt="TravelTales">
-                <h2>TravelTales</h2>
-                <p>Una agencia de viajes que se especializa en crear experiencias de viaje personalizadas y únicas para sus clientes.</p>
-                <a href="#verMas" class="ver-mas-btn">Ver más</a>
-            </div>
-            <div class="card">
-                <img src="./imgs/imagen-startup.png" alt="Sleeppeace">
-                <h2>Sleeppeace</h2>
-                <p>Almohadas inteligentes para personas que padecen tinnitus, psicotrastornos o dificultades para conciliar el sueño.</p>
-                <a href="#verMas" class="ver-mas-btn">Ver más</a>
-            </div>
-            <div class="card">
-                <img src="./imgs/imagen-startup.png" alt="EduKids">
-                <h2>EduKids</h2>
-                <p>Un centro educativo que ofrece programas de aprendizaje innovadores para niños, incluyendo talleres de ciencia, arte y tecnología.</p>
-                <a href="#verMas" class="ver-mas-btn">Ver más</a>
-            </div>
+        <div class="cards-container slider">
+
         </div>
         </section>
 
@@ -244,13 +236,16 @@
           </div>
         </div>
         <!-- fondos d footer -->
-      </footer>
+    </footer>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/0eeaa74056.js" crossorigin="anonymous"></script>
   
   <script>AOS.init()</script>
+  <script src="./js/login.js"></script>
+
   <script src="./js/main.js"></script>
+  <script src="./js/cargar-cards.js"></script>
   <script>
    document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll('.numero');

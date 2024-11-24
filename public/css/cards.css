@@ -1,0 +1,52 @@
+/* Container startups */
+.startups {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.startups h2 {
+  color: rgb(17 94 89);
+  font-size: 2.3rem;
+  margin-top: 5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 15px;
+  overflow: hidden;
+  width: 350px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cards-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center; /* Distribuir las tarjetas con espacio entre ellas */
+  box-sizing: border-box;
+}
+
+.cards-container .card {
+  max-width: 330px;
+  /* Tamaño mínimo en pantallas grandes */
+}
+
+/* Responsividad para pantallas más pequeñas (celulares) */
+@media (max-width: 768px) {
+  .cards-container .card {
+    flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
+    max-width: 100%;
+    min-width: 100%;
+  }
+}

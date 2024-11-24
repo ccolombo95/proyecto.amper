@@ -9,6 +9,11 @@ const getStartups = async () => {
   const [result] = await connection.promise().query(query);
   return result;
 };
+const getStartupsDataMain = async () => {
+  const query = `SELECT id, name, slogan, description, banner FROM startups`;
+  const [result] = await connection.promise().query(query);
+  return result;
+};
 const getStartup = async (id) => {
   const query = `
     SELECT startups.*
@@ -88,6 +93,7 @@ const deleteStartup = async (id) => {
 
 export const db = {
   getStartups,
+  getStartupsDataMain,
   getStartup,
   createStartup,
   updateStartup,

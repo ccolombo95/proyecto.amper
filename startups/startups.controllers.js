@@ -6,6 +6,11 @@ const getStartups = async (req, res) => {
 
   res.json(result);
 };
+const getStartupsDataMain = async (req, res) => {
+  const result = await db.getStartupsDataMain();
+
+  res.json(result);
+};
 const getStartup = async (req, res) => {
   try {
     const result = await db.getStartup(req.params.id);
@@ -72,6 +77,7 @@ const deleteStartup = async (req, res) => {
 
 export const controllers = {
   getStartups,
+  getStartupsDataMain,
   getStartup,
   createStartup,
   updateStartup,
