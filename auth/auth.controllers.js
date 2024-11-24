@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 import { config } from "../auth/index.js";
 import { db as usersDB } from "../users/index.js";
 
+
+
 const register = (req, res) => {
   const {
     name,
@@ -42,6 +44,7 @@ const register = (req, res) => {
         .redirect("/pages/login.html")
     : res.send("Algo salió mal. Vuelta atrás e inténtelo de nuevo.");
 };
+
 
 const login = async (req, res) => {
   const { email, password } = req.body;
