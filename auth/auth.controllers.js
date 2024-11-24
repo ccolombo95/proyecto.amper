@@ -83,7 +83,10 @@ const login = async (req, res) => {
 
     const token = jwt.sign(payload, signature, config.token);
 
-    res.status(200).cookie("token", token, config.cookie).redirect("/");
+    res
+      .status(200)
+      .cookie("token", token, config.cookie)
+      .redirect("/admin/dashboard.html");
   } catch (error) {
     console.error(`Error in login: ${error.message}`);
     res.status(500).json({ error: true, desc: "Internal server error" });

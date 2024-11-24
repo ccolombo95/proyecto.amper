@@ -9,6 +9,7 @@ router
 
   .get("/", controllers.getStartups)
   .get("/startup/:id", controllers.getStartup)
+  .get("/startupsdata", controllers.getStartupsDataMain)
 
   .post("/", middlewares.files.uploadImage, controllers.createStartup)
 
