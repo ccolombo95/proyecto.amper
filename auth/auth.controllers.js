@@ -39,7 +39,7 @@ const register = (req, res) => {
         // .set('authorization', `Bearer ${token}`)
         // .cookie('token', token, config.cookie)
         .cookie("token", token, config.cookie)
-        .redirect("/pages/iniciosesion.html")
+        .redirect("/pages/login.html")
     : res.send("Algo salió mal. Vuelta atrás e inténtelo de nuevo.");
 };
 
@@ -95,7 +95,7 @@ const login = async (req, res) => {
 
 const logout = (req, res) => {
   res.clearCookie("token");
-  return res.redirect("/");
+  return res.redirect("/index.html");
 };
 
 const checkCookie = (req, res) => {
