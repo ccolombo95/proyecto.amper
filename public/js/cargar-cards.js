@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       card.className = "card";
 
       const image = document.createElement("img");
-      image.src = startup.banner || "./imgs/default-startup.png"; // Ruta por defecto si no hay imagen
+      image.src = startup.banner || "./imgs/default-startup.png";
       image.alt = startup.name;
 
       const title = document.createElement("h2");

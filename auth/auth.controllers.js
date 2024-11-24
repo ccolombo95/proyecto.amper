@@ -3,8 +3,6 @@ import jwt from "jsonwebtoken";
 import { config } from "../auth/index.js";
 import { db as usersDB } from "../users/index.js";
 
-
-
 const register = (req, res) => {
   const {
     name,
@@ -44,7 +42,6 @@ const register = (req, res) => {
         .redirect("/pages/login.html")
     : res.send("Algo salió mal. Vuelta atrás e inténtelo de nuevo.");
 };
-
 
 const login = async (req, res) => {
   const { email, password } = req.body;
@@ -86,10 +83,7 @@ const login = async (req, res) => {
 
     const token = jwt.sign(payload, signature, config.token);
 
-    res
-      .status(200)
-      .cookie("token", token, config.cookie)
-      .redirect("/admin/dashboard.html");
+    res.status(200).cookie("token", token, config.cookie).redirect("/");
   } catch (error) {
     console.error(`Error in login: ${error.message}`);
     res.status(500).json({ error: true, desc: "Internal server error" });
