@@ -12,30 +12,16 @@
   margin-top: 5rem;
 }
 
-.container.image-startups {
-  width: 1000px;
-  overflow-x: hidden;
-}
-
 .cards-container {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   max-width: 1200px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Distribuir las tarjetas con espacio entre ellas */
   box-sizing: border-box;
 }
-.cards-container.slider {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
 
-  flex-wrap: nowrap;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 100%;
-}
 .card {
   background-color: white;
   border-radius: 8px;
@@ -44,7 +30,7 @@
   padding: 15px;
   overflow: hidden;
   width: 350px;
-  max-width: 330px;
+  height: 400px;
 }
 .card img {
   width: 100%;
@@ -54,9 +40,39 @@
 
 /* Responsividad para pantallas más pequeñas (celulares) */
 @media (max-width: 768px) {
-  .card {
+  .cards-container .card {
     flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
     max-width: 100%;
     min-width: 100%;
   }
+}
+
+/* Estilos para el slider */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los botones */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }

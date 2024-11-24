@@ -97,11 +97,16 @@
         </div>
 
         <section class="container image-startups" style="background-image: url('./imgs/polygon-scatter-haikei.svg'); background-size: cover;">
-  
-          <div class="cards-container slider">
-
+          <div class="slider-wrapper">
+            <!-- Contenedor para el slider con las últimas 3 startups -->
+            <div class="cards-container slider"></div>
+            
+            <!-- Botones de navegación -->
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
           </div>
         </section>
+        
 
       </section>
 
@@ -245,7 +250,7 @@
   <script src="./js/login.js"></script>
 
   <script src="./js/main.js"></script>
-  <script src="./js/cargar-cards.js"></script>
+  <script src="./js/cargar-cards-slider.js"></script>
   <script>
    document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll('.numero');

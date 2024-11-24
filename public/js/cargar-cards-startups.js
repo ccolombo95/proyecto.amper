@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const container = document.querySelector(".cards-container");
+  const startupsContainer = document.querySelector(".cards-container.startups");
+
+  if (!startupsContainer) {
+    console.error("El contenedor de startups no fue encontrado.");
+    return; // Detener la ejecución si no se encuentra el contenedor
+  }
 
   try {
     // Hacer el fetch a la URL especificada
@@ -13,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Parsear la respuesta como JSON
     const startupsData = await response.json();
 
-    // Crear las tarjetas dinámicamente
+    // Crear las tarjetas dinámicamente para .cards-container.startups
     startupsData.forEach((startup) => {
       const card = document.createElement("div");
       card.className = "card";
@@ -39,8 +44,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       card.appendChild(description);
       card.appendChild(link);
 
-      // Agregar la tarjeta al contenedor
-      container.appendChild(card);
+      // Agregar la tarjeta al contenedor de todas las startups
+      startupsContainer.appendChild(card);
     });
   } catch (error) {
     console.error("Error al cargar las startups:", error);
