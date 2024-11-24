@@ -12,19 +12,9 @@
   margin-top: 5rem;
 }
 
-.card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 15px;
-  padding: 15px;
-  overflow: hidden;
-  width: 350px;
-}
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.container.image-startups {
+  width: 1000px;
+  overflow-x: hidden;
 }
 
 .cards-container {
@@ -33,18 +23,38 @@
   align-items: center;
   max-width: 1200px;
   flex-wrap: wrap;
-  justify-content: center; /* Distribuir las tarjetas con espacio entre ellas */
+  justify-content: center;
   box-sizing: border-box;
 }
+.cards-container.slider {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 
-.cards-container .card {
+  flex-wrap: nowrap;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 15px;
+  overflow: hidden;
+  width: 350px;
   max-width: 330px;
-  /* Tamaño mínimo en pantallas grandes */
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Responsividad para pantallas más pequeñas (celulares) */
 @media (max-width: 768px) {
-  .cards-container .card {
+  .card {
     flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
     max-width: 100%;
     min-width: 100%;
