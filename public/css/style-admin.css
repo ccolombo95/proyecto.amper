@@ -32,7 +32,7 @@ input,
 /* NAVBAR */
 /*ESTILOS HEADER PARA ESCRITORIO*/
 .header {
-  background-color: #9f3647;
+  background-color: #007061;
   color: #ffffff;
   height: 12vh;
   position: sticky;
@@ -88,7 +88,7 @@ input,
           /* Agregar efecto de botón presionado */
           transition: transform 0.3s, box-shadow 0.3s;
           &:hover {
-            background-color: #9f3647;
+            background-color: #929292;
             /* transform: scale(0.95);
                          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
           }
@@ -161,13 +161,13 @@ input,
   font-size: 22px;
 }
 #ButtonAdmin {
-  background-color: #9f3647;
+  background-color: #00694b;
   margin: 1rem;
   max-width: 350px;
   border: none;
 }
 #ButtonAdmin:hover {
-  background-color: #9f3648c9;
+  background-color: rgb(36, 172, 133);
 }
 /* TABLE */
 #TableFunctions {
@@ -201,7 +201,6 @@ input,
   width: 100%;
   max-width: 900px;
   margin: 0 2rem;
-  z-index: 10001;
   padding: 1rem 2rem;
   background-color: white;
   border: 0.5px solid #c4d5ee;
@@ -236,7 +235,7 @@ input,
   width: 2rem;
 }
 #TableAdmin thead th {
-  border-bottom: 3px solid #9f3647;
+  border-bottom: 3px solid #0c5539;
 }
 
 #TableAdmin tbody tr td.Name {
@@ -253,7 +252,7 @@ input,
   gap: 1rem;
 }
 #TableAdmin tbody tr td span .FunctionsLine {
-  border-right: 1px solid #9f3647;
+  border-right: 1px solid #369f7c;
   height: 1rem;
   align-self: flex-end;
 }
@@ -366,7 +365,7 @@ input,
 }
 
 #ButtonAdmin {
-  background-color: #9f3647;
+  background-color: #007061;
   border: none;
   color: white;
   font-size: 20px;

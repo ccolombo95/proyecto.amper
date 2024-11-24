@@ -26,6 +26,10 @@
   z-index: -1;
 }
 
+.loguin{
+  background-image: linear-gradient(to bottom, #007061, #008170, #007061, #007061, #ffffff);
+}
+
 .hero__container {
   max-width: 800px;
   --padding-container: 0;
@@ -625,5 +629,94 @@ button:hover {
   }
   .payment-summary {
     border-left: none;
+  }
+}
+
+
+/**/
+
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 20px; /* Asegura que haya margen en los lados */
+  justify-self: center;
+  height: 70%;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px; /* Ajuste de tamaño de fuente para una mejor visibilidad */
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #00b3b3;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #00b3b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #009999;
+}
+
+/* Media queries para mejorar la responsividad */
+@media (max-width: 600px) {
+  body {
+    padding: 0; /* Elimina el padding extra en pantallas más pequeñas */
+  }
+
+  .login-container {
+    padding: 30px; /* Menos padding en pantallas pequeñas */
+    max-width: 350px; /* Limita el ancho máximo */
+  }
+
+  h2 {
+    font-size: 20px; /* Ajuste en tamaño de fuente para pantallas pequeñas */
+  }
+
+  .input-group input {
+    font-size: 14px; /* Reducir el tamaño de la fuente de los inputs */
+  }
+
+  .btn-submit {
+    padding: 10px; /* Menor padding en pantallas pequeñas */
   }
 }
