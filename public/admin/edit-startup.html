@@ -10,7 +10,7 @@
     ></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Editar producto</title>
+    <title>Modificar emprendimiento</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,55 +38,105 @@
     </header>
     <div id="BodyContainerAdmin">
       <div class="BodyContainerSection">
-        <h1>Editar emprendimientos</h1>
+        <h1>Modificar emprendimiento</h1>
         <form
           id="FormAdmin"
-          class="form-movie-edit"
           enctype="multipart/form-data"
-          action="./../startup"
+          action="./../startups"
           method="PUT"
         >
+          <div
+            id="formImagenContainer"
+            class="FormImage banner"
+            style="
+            background-image: url(./../assets/imgfilled.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;"
+          >
+            <input
+              type="file"
+              accept="image/*"
+              class="imagen_url banner"
+              name="banner"
+            />
+          </div>
+
           <input
             type="text"
-            id="title"
-            name="title"
-            placeholder="Película"
+            id="name"
+            name="name"
+            placeholder="Empresa"
             required
           />
           <input
             type="text"
-            id="director"
-            name="director"
-            placeholder="Director"
+            id="slogan"
+            name="slogan"
+            placeholder="Eslogan"
+            required
+          />
+
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Descripción"
+          />
+
+          <input
+            type="text"
+            id="facebook"
+            name="facebook"
+            placeholder="Link de facebook"
+          />
+          <input
+            type="text"
+            id="instagram"
+            name="instagram"
+            placeholder="Link de instagram"
+          />
+          <input
+            type="text"
+            id="website"
+            name="website"
+            placeholder="Link de sitio web"
+          />
+          <input
+            type="text"
+            id="owner"
+            name="owner"
+            placeholder="Responsable"
             required
           />
           <input
             type="text"
-            id="director2"
-            name="director2"
-            placeholder="Segundo director"
+            id="phone"
+            name="phone"
+            placeholder="Mail de responsable"
+            required
           />
           <input
             type="text"
-            id="writer"
-            name="writer"
-            placeholder="Escritor"
+            id="mail"
+            name="mail"
+            placeholder="Mail de responsable"
             required
           />
 
           <div id="ImagenGroup">
             <textarea
-              name="description"
-              id="description"
+              name="text1"
+              id="text1"
               cols="30"
-              rows="6"
-              placeholder="Descripción"
+              rows="5"
+              placeholder="Primer texto"
             ></textarea>
             <div
+              id="formImagenContainer"
               class="FormImage"
-              id="FormImage"
               style="
-              background-image: url() ;
+              background-image: url(./../assets/imgfilled.jpg);
               background-size: cover;
               background-position: center;
               background-repeat: no-repeat;"
@@ -94,76 +144,51 @@
               <input
                 type="file"
                 accept="image/*"
-                id="imagen_url"
-                name="image"
+                class="imagen_url"
+                name="photo1"
               />
             </div>
           </div>
-          <div class="SelectGroup">
-            <input type="date" id="date" name="date" required />
-            <select id="category" name="category">
-              <option value="o">Categoria</option>
-            </select>
-            <input
-              type="number"
-              name="duration"
-              placeholder="Duración (mins)"
-              id="duration"
-            />
-            <input
-              type="number"
-              name="budget"
-              id="budget"
-              placeholder="Presupuesto"
-            />
-            <input
-              type="number"
-              name="revenue"
-              id="revenue"
-              placeholder="Recaudación"
-            />
-            <select id="lenguage" name="lenguage">
-              <option value="o">Lenguaje</option>
-              <option value="ingles">Inglés</option>
-              <option value="español">Español</option>
-              <option value="portugues">Portugués</option>
-              <option value="frances">Francés</option>
-              <option value="chino">Chino</option>
-              <option value="japones">Japones</option>
-              <option value="coreano">Coreano</option>
-            </select>
+          <div id="ImagenGroup">
+            <div
+              id="formImagenContainer"
+              class="FormImage"
+              style="
+              background-image: url(./../assets/imgfilled.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;"
+            >
+              <input
+                type="file"
+                accept="image/*"
+                class="imagen_url"
+                name="photo2"
+              />
+            </div>
+            <textarea
+              name="text2"
+              id="text2"
+              cols="30"
+              rows="5"
+              placeholder="Segundo texto"
+            ></textarea>
           </div>
-          <input
-            type="text"
-            id="youtube"
-            name="youtube"
-            placeholder="Youtube (trailer)"
-          />
-          <input
-            type="text"
-            id="facebook"
-            name="facebook"
-            placeholder="Facebook"
-          />
-          <input
-            type="text"
-            id="instagram"
-            name="instagram"
-            placeholder="Instagram"
-          />
-          <input
-            type="text"
-            id="twitter"
-            name="twitter"
-            placeholder="Twitter"
-          />
-          <input type="text" id="web" name="web" placeholder="Página web" />
+          <textarea
+            name="text3"
+            id="text3"
+            cols="30"
+            rows="5"
+            class="text3"
+            placeholder="Tercer texto"
+          ></textarea>
 
-          <button type="submit" id="ButtonAdmin">Modificar</button>
+          <button id="ButtonAdmin">Modificar</button>
         </form>
       </div>
     </div>
+
     <script src="./../js/admin-main.js"></script>
-    <script src="./../js/admin-edit-movie.js"></script>
+    <script src="./../js/admin-edit-startup.js"></script>
   </body>
 </html>
