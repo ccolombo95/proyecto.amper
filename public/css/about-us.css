@@ -518,6 +518,10 @@ h3{
     .stat p {
         font-size: 1.4rem;
     }
+    .title-container-right{
+        margin-right: 0rem;
+
+    }
 }
 
 .divider {
@@ -533,6 +537,7 @@ h3{
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
+    justify-content: center;
 }
 
 .contact-left {
@@ -610,5 +615,9 @@ button:hover {
     .contact-left, .contact-right {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+
+    .gradient-bar-mitad {
+        width:15rem;
     }
 }
