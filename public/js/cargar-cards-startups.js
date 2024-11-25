@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       slogan.textContent = startup.slogan;
 
       const link = document.createElement("a");
-      link.href = "#verMas";
+      link.href = `./startup-x.html?id=${startup.id}`;
       link.className = "ver-mas-btn";
       link.textContent = "Ver más";
 

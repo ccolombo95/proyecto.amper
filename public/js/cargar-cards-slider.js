@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       card.setAttribute("data-aos", "zoom-in");
 
-
       const image = document.createElement("img");
       image.src = startup.banner || "./imgs/default-startup.png";
       image.alt = startup.name;
@@ -45,7 +44,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       slogan.textContent = startup.slogan;
 
       const link = document.createElement("a");
-      link.href = "#verMas";
+
+      link.href = `./pages/startup-x.html?id=${startup.id}`;
       link.className = "ver-mas-btn";
       link.textContent = "Ver más";
 
@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       card.appendChild(title);
       card.appendChild(description);
       card.appendChild(link);
-      
 
       // Agregar la tarjeta al contenedor del slider
       sliderContainer.appendChild(card);

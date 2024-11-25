@@ -1,11 +1,8 @@
+#portada-principal {
+  background-size: cover;
+}
 
-
-.portada-principal {
-    background-image: url("./../imgs/mundo-verde-arboles.jpg");
-  }
-
-
-h1{
+h1 {
   font-size: 6rem;
 }
 
@@ -18,10 +15,9 @@ h1{
   font-size: 2.3rem;
 }
 
-.icon{
+.icon {
   color: black;
 }
-
 
 .icon:hover {
   opacity: 0.8;
@@ -113,7 +109,7 @@ h1{
     font-size: 14px;
   }
 }
-.contenedor-pro{
+.contenedor-pro {
   text-align: center;
   margin: 20px 0;
 }
@@ -124,40 +120,39 @@ h1{
   line-height: 1.5;
 }
 
-
 .informacion-propietario {
-  background-color: #fff; 
+  background-color: #fff;
   padding: 15px;
-  border-radius: 5px; 
-  margin: 20px auto; 
-  font-family: 'Poppins';
+  border-radius: 5px;
+  margin: 20px auto;
+  font-family: "Poppins";
   text-align: center; /* Centrado del texto */
 }
 
 .nombre {
   font-size: 22px;
-  font-weight: 600; 
-  color: #333; 
-  margin-bottom: 5px; 
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .email {
   font-size: 16px;
-  color: #005f37; 
-  text-decoration: none; 
-  cursor: pointer; 
+  color: #005f37;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .email:hover {
-  color: #009978; 
+  color: #009978;
 }
 .linea {
-  width: 60%; 
-  height: 2px; 
-  background-color: #e0e0e0; 
-  margin: 15px auto; 
+  width: 60%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin: 15px auto;
 }
 
-.contenedor-ecovida p{
+.contenedor-ecovida p {
   font-size: 1.2rem;
 }
