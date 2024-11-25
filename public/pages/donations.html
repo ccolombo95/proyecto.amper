@@ -19,15 +19,15 @@
             <div class="nav__logo" >
                 <h2 class="nav__title">Amper</h2>
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="../index.html" class="nav__links">Inicio</a>
+            <ul class="nav__link nav__link--menu " >
+                <li class="nav__items" style="padding-bottom: 4px;  ">
+                    <a href="../index.html" class="nav__links ">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="../pages/startups.html" class="nav__links">Emprendimientos</a>
+                    <a href="../pages/startups.html" class="nav__links ">Emprendimientos</a>
                 </li>
                 <li class="nav__items">
-                    <a href="../pages/about-us.html" class="nav__links">Quienes somos</a>
+                    <a href="../pages/about-us.html" class="nav__links  ">Quienes somos</a>
                 </li>
                 <li class="nav__items">
                     <a href="../index.html#iniciativas" class="nav__links">Iniciativas</a>
@@ -35,12 +35,19 @@
                 <li class="nav__items">
                     <a href="../pages/donations.html" class="nav__links active">Donar</a>
                 </li>
-                <li class="nav__items">
-                    <a href="../pages/loguin.html" class="nav__links ">Iniciar Sesión</a>
+                <li class="nav__items" id="iniciarSesion" style="display: block;">
+                  <a href="../pages/login.html" class="nav__links">Iniciar Sesión</a>
                 </li>
+                <li class="nav__items" id="administrador" style="display: none;">
+                  <a href="../admin/startups.html" class="nav__links">Dashboard</i></a>
+                </li>
+                <li class="nav__items" id="cerrarSesion" style="display: none;">
+                  <a href="./../../auth/logout" class="nav__links"><i class="fa-solid fa-lg fa-right-from-bracket"></i></a>
+                </li>
+      
                 <div class="nav__close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill:#fff;"><path d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"></path><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"></path></svg>                 </div>
-            </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill:#00503f"><path d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"></path><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"></path></svg>                 </div>
+              </ul>
 
             <div class="nav__menu">
                 <div class="nav__img">
@@ -235,68 +242,7 @@
             </div>
         </section>
 
-        <!-- <section class="testimony">
-            <div class="testimony__container container">
-                <img src="../imgs/images/leftarrow.svg" class="testimony__arrow" id="before">
-
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Jordan Alexander, <span class="testimony__course">estudiante
-                                de CSS.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
-                            blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="../imgs/images/face.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Alejandra Perez, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
-                            voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="../imgs/images/face2.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="../imgs/images/face3.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="4">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Kevin Ramirez, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="../imgs/images/face4.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-
-                <img src="../imgs/images/rightarrow.svg" class="testimony__arrow" id="next">
-            </div>
-        </section> -->
+      
     </main>
 
    <footer>
@@ -327,13 +273,14 @@
         </div>
       </footer>
 
-    
+    <script src="./../js/login.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/questions.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/0eeaa74056.js" crossorigin="anonymous"></script>
     <script>AOS.init()</script>
+    
 </body>
 
 </html>

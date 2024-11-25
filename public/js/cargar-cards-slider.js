@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       const card = document.createElement("div");
       card.className = "card";
 
+      card.setAttribute("data-aos", "zoom-in");
+
+
       const image = document.createElement("img");
       image.src = startup.banner || "./imgs/default-startup.png";
       image.alt = startup.name;
@@ -37,6 +40,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       const description = document.createElement("p");
       description.textContent = startup.description;
+
+      const slogan = document.createElement("p");
+      slogan.textContent = startup.slogan;
 
       const link = document.createElement("a");
       link.href = "#verMas";
@@ -48,6 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       card.appendChild(title);
       card.appendChild(description);
       card.appendChild(link);
+      
 
       // Agregar la tarjeta al contenedor del slider
       sliderContainer.appendChild(card);

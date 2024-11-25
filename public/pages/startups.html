@@ -20,47 +20,34 @@
         <div class="nav__logo">
           <h2 class="nav__title">Amper</h2>
         </div>
-        <ul class="nav__link nav__link--menu">
-          <li class="nav__items" style="padding-bottom: 4px;">
-            <a href="../index.html" class="nav__links">Inicio</a>
+        <ul class="nav__link nav__link--menu " >
+          <li class="nav__items" style="padding-bottom: 4px;  ">
+              <a href="../index.html" class="nav__links ">Inicio</a>
           </li>
           <li class="nav__items">
-            <a href="../pages/startups.html" class="nav__links active"
-              >Emprendimientos</a
-            >
+              <a href="../pages/startups.html" class="nav__links active">Emprendimientos</a>
           </li>
           <li class="nav__items">
-            <a href="../pages/about-us.html" class="nav__links"
-              >Quienes somos</a
-            >
+              <a href="../pages/about-us.html" class="nav__links  ">Quienes somos</a>
           </li>
           <li class="nav__items">
-            <a href="../index.html#iniciativas" class="nav__links"
-              >Iniciativas</a
-            >
+              <a href="../index.html#iniciativas" class="nav__links">Iniciativas</a>
           </li>
           <li class="nav__items">
-            <a href="./donations.html" class="nav__links">Donar</a>
+              <a href="../pages/donations.html" class="nav__links ">Donar</a>
           </li>
-          <li class="nav__items">
-            <a href="./loguin.html" class="nav__links">Iniciar Sesión</a>
+          <li class="nav__items" id="iniciarSesion" style="display: block;">
+            <a href="../pages/login.html" class="nav__links">Iniciar Sesión</a>
           </li>
+          <li class="nav__items" id="administrador" style="display: none;">
+            <a href="../admin/startups.html" class="nav__links">Dashboard</i></a>
+          </li>
+          <li class="nav__items" id="cerrarSesion" style="display: none;">
+            <a href="./../../auth/logout" class="nav__links"><i class="fa-solid fa-lg fa-right-from-bracket"></i></a>
+          </li>
+
           <div class="nav__close">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              viewBox="0 0 24 24"
-              style="fill:#fff;"
-            >
-              <path
-                d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"
-              ></path>
-              <path
-                d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"
-              ></path>
-            </svg>
-          </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill:#00503f"><path d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"></path><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"></path></svg>                 </div>
         </ul>
 
         <div class="nav__menu">
@@ -93,7 +80,8 @@
       </section>
     </header>
 
-    <main>
+    <main style="  background: linear-gradient(to top, white, rgba(243, 243, 243), white); /* Gradiente que va de blanco a medio gris */
+">
       <section class="startups" id="startups">
         <h2>Nuestros emprendimientos</h2>
         <div class="gradient-bar"></div>
@@ -107,7 +95,7 @@
           lo que importa es tu pasión y determinación. Juntos, podemos construir
           un futuro lleno de oportunidades y éxito.
         </p>
-        <button>Conocer más</button>
+        <a href="" class="ver-mas-btn">Conocer más</a>
       </section>
       <section class="scroll-to-top-section">
         <div class="scroll-to-top-container">
@@ -164,6 +152,8 @@
     </script>
   </body>
   <script src="./../js/main.js"></script>
+  <script src="./../js/login.js"></script>
+
   <script>
       const text = "AMPER ES FUTURO"; // Texto en una sola línea
       let index = 0;

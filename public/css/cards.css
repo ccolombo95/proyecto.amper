@@ -9,8 +9,8 @@
 .startups h2 {
   color: rgb(17 94 89);
   font-size: 2.3rem;
-  margin-top: 5rem;
 }
+
 
 .cards-container {
   display: inline-flex;
@@ -30,7 +30,7 @@
   padding: 15px;
   overflow: hidden;
   width: 350px;
-  height: 400px;
+  height: auto;
 }
 .card img {
   width: 100%;
@@ -58,15 +58,18 @@
 /* Estilos para los botones */
 .prev,
 .next {
+  display: flex;
+  width: 40px;
+  height: 40px; 
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  background-color: #009688;
   cursor: pointer;
   z-index: 10;
+  border-radius: 50%; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .prev {
@@ -75,4 +78,12 @@
 
 .next {
   right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #03bdaa; 
+}
+.prev i, .next i {
+  font-size: 24px; 
+  color: #ffffff; 
 }
