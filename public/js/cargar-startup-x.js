@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-      // Realiza la solicitud a la API
       const response = await fetch(`./../../startups/startup/${id}`);
       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
@@ -25,9 +24,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       document.title = `${startup.name}`;
 
-      // Actualiza el contenido del HTML con los datos obtenidos
-
-      // Título
       let titleElement = document.querySelector("#title");
       if (!titleElement) {
         titleElement = document.createElement("h1");

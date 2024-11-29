@@ -76,16 +76,15 @@ if (navbarIcon) {
 
 // DESPLAZAMIENTO TOP PARA EL BOTON
 function scrollToTop() {
-  console.log("Botón de desplazamiento clickeado!"); // Mensaje para verificar el clic
+  console.log("Botón de desplazamiento clickeado!");
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
 
-// DESPLAZAR A CIERTA SECCION
 function desplazar(sectionId) {
-  const targetElement = document.getElementById(sectionId); // Selecciona el elemento destino usando el ID proporcionado
+  const targetElement = document.getElementById(sectionId);
 
   if (targetElement) {
     // Realiza el desplazamiento suave

@@ -8,7 +8,7 @@ h1 {
 
 .icons {
   display: flex;
-  gap: 2rem; /* Espaciado entre íconos */
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -22,7 +22,7 @@ h1 {
 .icon:hover {
   opacity: 0.8;
 }
-/* General container */
+
 .contenedor-ecovida {
   display: flex;
   flex-direction: column;
