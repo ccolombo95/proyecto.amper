@@ -290,6 +290,7 @@ footer {
 
 .pages ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -339,6 +340,14 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .footer-container {
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 250px;
+    margin: 1rem;
+    padding: 2rem;
+  }
+
   .logo h2 {
     font-size: 25px;
   }
