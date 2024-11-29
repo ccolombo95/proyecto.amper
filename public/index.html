@@ -117,34 +117,36 @@
           <div class="gradient-bar-mitad" style="width: 14rem;"></div> 
         </section>
 
-        <section class="split-section " style=" background-color: rgb(244, 255, 251); margin-top: 20px; ">  
-            <div id="info-cajas" class="py-14">
-                <div class="service-box-container">
-                  <div class="service-box" style="background-color: #004d40;"  data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                    <h3 class="service-box-title">PLANIFICACIÓN EMPRESARIAL</h3>
-                    <p class="service-box-text">Te ayudamos a definir las metas y estrategias clave para guiar a tu empresa de manera eficiente y efectiva.</p>
-                    <div class="service-box-icon">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+        <section class="split-section " style="background-color: rgb(244, 255, 251); margin-top: 20px;">
+          <div id="info-cajas" class="py-14">
+              <div class="service-box-container">
+                  <div class="service-box" style="background-color: #004d40;" data-service="PLANIFICACIÓN EMPRESARIAL">
+                      <h3 class="service-box-title">PLANIFICACIÓN EMPRESARIAL</h3>
+                      <p class="service-box-text">Te ayudamos a definir las metas y estrategias clave para guiar a tu empresa de manera eficiente y efectiva.</p>
+                      <div class="service-box-icon" data-id="planificacion">
+                          <a href="#contact-form" style="text-decoration: none;color: white;"><i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
                   </div>
-                  <div class="service-box" style="background-color: #149785;"" data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-sine">
-                    <h3 class="service-box-title">MARKETING DIGITAL</h3>
-                    <p class="service-box-text">Te ayudamos a definir las estrategias clave del mundo digital para impulsar el crecimiento y éxito de tu empresa.</p>
-                    <div class="service-box-icon">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+                  <div class="service-box" style="background-color: #149785;" data-service="MARKETING DIGITAL">
+                      <h3 class="service-box-title">MARKETING DIGITAL</h3>
+                      <p class="service-box-text">Te ayudamos a definir las estrategias clave del mundo digital para impulsar el crecimiento y éxito de tu empresa.</p>
+                      <div class="service-box-icon" data-id="marketing">
+                        <a href="#contact-form" style="text-decoration: none;color: white;"><i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
                   </div>
-                  <div class="service-box" style="background-color: #11afa7;" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
-                    <h3 class="service-box-title">ASESORÍA LEGAL</h3>
-                    <p class="service-box-text">Te brindamos todo lo necesario para asegurar y fortalecer la protección jurídica de tu empresa.</p>
-                    <div class="service-box-icon">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+                  <div class="service-box" style="background-color: #11afa7;" data-service="ASESORÍA LEGAL">
+                      <h3 class="service-box-title">ASESORÍA LEGAL</h3>
+                      <p class="service-box-text">Te brindamos todo lo necesario para asegurar y fortalecer la protección jurídica de tu empresa.</p>
+                      <div class="service-box-icon" data-id="legal">
+                        <a href="#contact-form" style="text-decoration: none;color: white;"><i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
                   </div>
-                </div>
               </div>
-        </section>
+          </div>
       </section>
+      
+
+      
 
       <section class="stats">
         <div class="stat">
@@ -184,25 +186,26 @@
             <p>¿Tienes alguna consulta? Completa el formulario y nos pondremos en contacto contigo.</p>
         </div>
         <div class="contact-right">
-            <form>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="example@domain.com" required>
-    
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" placeholder="(123) 456-7890">
-    
-                <label for="preferencia">Preferencia de contacto</label>
-                <select id="preferencia">
-                    <option value="email">Email</option>
-                    <option value="telefono">Teléfono</option>
-                </select>
-    
-                <label for="notas">Notas</label>
-                <textarea id="notas" rows="4" placeholder="Agrega cualquier nota..."></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+          <form id="contact-form">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="example@domain.com" required>
+  
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="(123) 456-7890">
+  
+              <label for="preferencia">Preferencia de contacto</label>
+              <select id="preferencia">
+                  <option value="email">Email</option>
+                  <option value="telefono">Teléfono</option>
+              </select>
+  
+              <label for="notas">Notas</label>
+              <textarea id="notas" rows="4" placeholder="Agrega cualquier nota..."></textarea>
+  
+              <button type="submit">Enviar</button>
+              <p id="form-status" style="display: none; color: green; margin-top: 10px;">¡Mensaje enviado con éxito!</p>
+          </form>
+      </div>
     </section>
 
 
@@ -251,6 +254,7 @@
   <script src="./js/login.js"></script>
 
   <script src="./js/main.js"></script>
+  <script src="./js/form.js"></script>
   <script src="./js/cargar-cards-slider.js"></script>
   <script>
    document.addEventListener("DOMContentLoaded", () => {
